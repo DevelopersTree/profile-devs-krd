@@ -1,0 +1,26 @@
+{
+  "name": "profile-devs-krd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node www.js",
+    "dev": "nodemon www.js",
+    "db:migrate": "npx knex migrate:latest --knexfile=./data/knexfile.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.0.0",
+    "http-proxy": "^1.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
